@@ -1,0 +1,23 @@
+/******************************************************************************
+
+a program to read an integer and display its successor and predecessor.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+int x,s,p;    
+    
+    printf("Digite um numero:");
+    scanf("%d", &x);
+    
+s = x + 1;
+p = x - 1;
+
+    printf("Sucessor:%d\nAntecessor:%d",s,p);
+
+
+    return 0;
+}
+
