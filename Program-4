@@ -1,0 +1,25 @@
+/*******************************************************************************
+
+an algorithm that reads the value of the
+minimum wage and the value of a person's salary. Calculate and display how many minimum wages this person earns
+wins. Note: the minimum wage is currently R$622.00
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+float s,sm,qsm;
+    
+    printf("Digite o salario minimo(Obs: o salário mínimo atualmente é R$622,00):");
+    scanf("%f", &sm);
+    
+    printf("\nDigite um salario qualquer:");
+    scanf("%f", &s);
+    
+qsm = s / sm;
+
+    printf("\nO salario digitado, equivale a %0.2f salarios minimos", qsm);
+  
+    return 0;
+}
