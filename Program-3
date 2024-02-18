@@ -1,0 +1,25 @@
+/*******************************************************************************
+
+Most restaurants charge 10% of the customer's consumption to the waiter,
+although by law you cannot force the customer to pay. Create an algorithm that reads the amount spent on
+expenses incurred in a restaurant and print the tip amount and the total amount to be paid
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+float x,g,total;
+    
+    printf("Digite a conta do restaurante:");
+    scanf("%f", &x);
+    
+g = (x / 100) * 10;
+
+total = g + x;
+
+    printf("O valor da gorjeta e:R$%0.2f\n", g);
+    printf("O valor total do restaurante incluindo a gorjeta e a conta e:R$%0.2f\n", total);
+
+    return 0;
+}
