@@ -1,0 +1,21 @@
+/*******************************************************************************
+
+an algorithm that can enter the value of a product and display the new value taking into account
+given that the discount was 9%.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+float v,vd;
+    
+    printf("Digite o valor do produto:");
+    scanf("%f", &v);
+    
+vd = v - ((v/100)*9);
+
+    printf("\nO valor do produto com disconto de 9 porcento e de: R$%0.2f", vd);
+  
+    return 0;
+}
