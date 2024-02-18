@@ -1,0 +1,35 @@
+/******************************************************************************
+
+a program to read two integers and display the sum, difference, product and
+the quotient. The output must show the operands, operator and result of each operation
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+int n1,n2,adi,sub,mult;
+float divi;
+
+    
+    printf("Digite o primeiro operador:\n");
+    scanf("%d", &n1);
+    
+    printf("Digite o segundo operador:\n");
+    scanf("%d", &n2);
+    
+adi = n1 + n2;
+sub = n1 - n2;
+mult = n1 * n2;
+divi = (float)n1 / (float)n2;
+
+
+
+    printf("%d + %d = %d\n",n1,n2,adi);
+    printf("%d - %d = %d\n",n1,n2,sub);
+    printf("%d x %d = %d\n",n1,n2,mult);
+    printf("%d : %d = %0.2f\n",n1,n2,divi);
+
+    return 0;
+}
+
